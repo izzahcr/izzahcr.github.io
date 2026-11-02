@@ -1,44 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My SCST1133 E-Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Izzah | SCST1133 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>SCST1133 Data Engineering Ecosystem</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Selected Work</a>
-      <a href="#reflection">Reflection</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>Professional Profile</h2>
-      <p>Write a short professional introduction here.</p>
-    </section>
+    <!-- Header / Banner Section -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Nurul Izzah</h1>
+            <p class="subtitle">SCST1133 Data Engineering Ecosystem</p>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#journey">Learning Journey</a></li>
+                    <li><a href="#artifacts">Selected Work</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#acknowledgements">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section id="work">
-      <h2>Selected Work</h2>
-      <article>
-        <h3>Design Thinking and Figma</h3>
-        <img src="images/project-screenshot.png"
-             alt="Screenshot of my Figma prototype">
-        <p>Explain the artifact and your contribution.</p>
-      </article>
-    </section>
+    <!-- Main Content Container -->
+    <main class="container">
 
-    <section id="reflection">
-      <h2>Course Reflection</h2>
-      <p>Explain what you learned and what you would improve.</p>
-    </section>
-  </main>
+        <!-- Home / Professional Profile -->
+        <section id="profile" class="section-block">
+            <h2>Home / Professional Profile</h2>
+            <p>Welcome to my portfolio! I am a student pursuing Data Engineering. This site showcases my coursework, hands-on projects, reflections, and insights gained throughout the SCST1133 Data Engineering Ecosystem course.</p>
+        </section>
 
-  <footer><p>© 2026 Your Name</p></footer>
+        <!-- Learning Journey -->
+        <section id="journey" class="section-block">
+            <h2>Learning Journey</h2>
+            <p>Throughout this course, I have explored fundamental concepts in data processing pipelines, system architectures, and modern data engineering tools. My journey has expanded my practical understanding of both front-end presentation and back-end data workflows.</p>
+        </section>
+
+        <!-- Selected Work / Artifacts -->
+        <section id="artifacts" class="section-block">
+            <h2>Selected Work / Artifacts</h2>
+
+            <article class="artifact-card">
+                <h3>Design Thinking and Figma</h3>
+                <p><strong>Overview:</strong> Applied design thinking methodology to define user problems, brainstorm solutions, and construct interactive wireframes.</p>
+                <p><strong>Contribution:</strong> Led user interface prototyping and designed high-fidelity screens using Figma.</p>
+                <div class="image-placeholder">
+                    <img src="figma-screenshot.png" alt="Screenshot of Figma Prototype" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="img-fallback">[ Screenshot of my Figma prototype ]</span>
+                </div>
+            </article>
+
+            <article class="artifact-card">
+                <h3>Industry Talk</h3>
+                <p><strong>Topic:</strong> Emerging Trends in Big Data & Data Infrastructure.</p>
+                <p><strong>Key Takeaways:</strong> Learned about real-world enterprise data pipelines, modern data stack adoption, and key technical skills required in the industry.</p>
+            </article>
+
+            <article class="artifact-card">
+                <h3>Industry Visit</h3>
+                <p><strong>Company:</strong> Tech Enterprise Visit.</p>
+                <p><strong>Insights & Reflection:</strong> Observed live database monitoring operations and gained first-hand perspective on how data engineers collaborate with software developers.</p>
+            </article>
+
+            <article class="artifact-card">
+                <h3>Data Engineering Lifecycle Video</h3>
+                <p><strong>Description:</strong> A summary video breaking down the five phases of the data engineering lifecycle: ingestion, storage, processing, analysis, and serving.</p>
+                <p><strong>Video Link:</strong> <a href="#" target="_blank" class="btn-link">Watch Video Here &rarr;</a></p>
+            </article>
+
+            <article class="artifact-card">
+                <h3>Other Selected Evidence</h3>
+                <p>Includes hands-on lab exercises, SQL query scripts, data visualization dashboards, and group project documentations.</p>
+            </article>
+        </section>
+
+        <!-- Course Learning Summary -->
+        <section id="summary" class="section-block">
+            <h2>Course Learning Summary</h2>
+            <p>SCST1133 provided a strong foundational roadmap for data engineering. I gained critical experience in system design thinking, pipeline architecture concepts, and collaborative software development practices.</p>
+        </section>
+
+        <!-- Sources and Acknowledgements -->
+        <section id="acknowledgements" class="section-block">
+            <h2>Sources and Acknowledgements</h2>
+            <ul class="styled-list">
+                <li>Course materials, lecture notes, and lab guidelines provided by the SCST1133 teaching team.</li>
+                <li>Figma documentation and GitHub Pages deployment tutorials.</li>
+                <li>Special thanks to my course lecturer and group project teammates for their guidance and collaboration.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Nurul Izzah. Built with GitHub Pages & Jekyll-inspired CSS.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
