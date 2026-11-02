@@ -1,22 +1,160 @@
-* { box-sizing: border-box; }
+/* --- Global Styles & Typography --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  margin: 0;
-  color: #1f2937;
-  background: #f5f7fa;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #374151;
+    background-color: #f9fafb;
+    line-height: 1.7;
 }
-header, main, footer {
-  width: min(960px, 92%);
-  margin: auto;
+
+/* --- Container Utility --- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-header { padding: 48px 0 24px; }
-nav { display: flex; flex-wrap: wrap; gap: 16px; }
-section {
-  margin: 20px 0;
-  padding: 24px;
-  background: white;
-  border-radius: 12px;
+
+/* --- Header / Navigation --- */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 40px 0 20px 0;
+    margin-bottom: 40px;
 }
-img { max-width: 100%; height: auto; }
-a { color: #8a1538; }
+
+.site-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.site-header .subtitle {
+    font-size: 1.1rem;
+    color: #4b5563;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* --- Main Content & Headings --- */
+.section-block {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+p strong {
+    color: #111827;
+}
+
+/* --- Artifact Cards --- */
+.artifact-card {
+    background-color: #f9fafb;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.artifact-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+/* --- Image & Fallback Styling --- */
+.image-placeholder {
+    margin-top: 12px;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+.img-fallback {
+    display: none;
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-style: italic;
+    background: #eef2ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px dashed #93c5fd;
+}
+
+/* --- Links & Lists --- */
+.btn-link {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.styled-list {
+    padding-left: 20px;
+}
+
+.styled-list li {
+    margin-bottom: 8px;
+}
+
+/* --- Footer --- */
+.site-footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 40px;
+}
